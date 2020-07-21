@@ -1,0 +1,52 @@
+{
+  "name": "starter",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://localhost:4000",
+  "scripts": {
+    "build": "react-scripts build",
+    "build-noserver": "cross-env PUBLIC_URL=. REACT_APP_USE_MEMORY_ROUTER=1 react-scripts build",
+    "test": "react-scripts test",
+    "start": "cross-env NODE_ENV=production node server/server.js",
+    "start-server-dev": "cross-env NODE_ENV=development nodemon server/server.js --watch server/*",
+    "start-client-dev": "react-scripts start",
+    "start-dev": "concurrently \"yarn run start-server-dev\" \"yarn run start-client-dev\" --kill-others"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.5.0",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "helmet": "^3.23.3",
+    "react": "^16.13.1",
+    "react-bootstrap": "^1.2.2",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1"
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "cross-env": "^7.0.2",
+    "nodemon": "^2.0.4"
+  }
+}

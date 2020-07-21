@@ -1,0 +1,20 @@
+[
+    {
+        "id": "001",
+        "name": "Mr Martin",
+        "username": "martin",
+        "email": "martin@april.jokes"
+    },
+    {
+        "id": "002",
+        "name": "Mrs Lowell",
+        "username": "lowell",
+        "email": "lowell@test.tv"
+    },
+    {
+        "id": "003",
+        "name": "Kevin",
+        "username": "kevin",
+        "email": "kevin@test.net"
+    }
+]
